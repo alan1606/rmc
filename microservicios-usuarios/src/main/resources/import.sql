@@ -1,0 +1,1 @@
+insert into usuarios (username, password, enabled) values ("alan1606", "1231606", 1), ("alan", "zxcasdqwe123", 1);
