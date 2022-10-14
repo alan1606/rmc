@@ -1,5 +1,6 @@
 package com.aaguirre.ris.models.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 import javax.persistence.GeneratedValue;
@@ -17,6 +18,9 @@ public class Area {
 	
 	private String name;
 
+	@Column(name = "duration_minutes")
+	private Integer durationInMinutes;
+	
 	public Long getId() {
 		return id;
 	}
@@ -31,6 +35,14 @@ public class Area {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Integer getDurationInMinutes() {
+		return durationInMinutes;
+	}
+
+	public void setDurationInMinutes(Integer durationInMinutes) {
+		this.durationInMinutes = durationInMinutes;
 	}
 	
 	
